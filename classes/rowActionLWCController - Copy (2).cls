@@ -2,8 +2,7 @@ public class rowActionLWCController {
 
 	@AuraEnabled
     public static list<contact> getRelatedContact(Id accids){
-        // commit git new commit hey new Commit
-
+        // commit git
         list<contact> conList = [Select id, phone, accountId from contact where accountId=: accids ];
         
         if(conlist.size()>0){
